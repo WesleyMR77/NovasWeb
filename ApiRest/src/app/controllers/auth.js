@@ -20,9 +20,9 @@ const register = async (req, res) => {
         var authUser;
 
         if(req.body.masterPassword == ""){
-            authUser = userController.create(false, req.body);
+            authUser = await userController.create(false, req.body);
         }else if (req.body.masterPassword == "YconMaster") {
-            authUser = userController.create(true, req.body);
+            authUser = await userController.create(true, req.body);
         }else{
             return res.send({ error: "Master password incorrect"});
         }

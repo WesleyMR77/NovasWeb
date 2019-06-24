@@ -26,10 +26,10 @@ module.exports = {
                 adminAccount: false
             });
             user = await User.findOne({ name: info.name });
-            character.create(user.id);
+            await character.create(user.id);
         };
         user = await User.findOne({ name: info.name });
-        return user;   
+        return user;
     },
 
     async show(req, res){
@@ -45,6 +45,6 @@ module.exports = {
     async delete(req, res){
         character.delete(req.params.id);
         await User.findByIdAndRemove(req.params.id);
-        return res.send(); 
+        return res.send();
     }
 }
