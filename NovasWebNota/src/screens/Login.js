@@ -7,7 +7,7 @@ export default class LoginPage extends Component {
         return (
             <View style={styles.container}>
                 <View style={styles.positionTextLogin} >
-                    <Text style={styles.textLogin}>Novas Craft</Text>
+                    <Text style={styles.textLogin}>NovasCraft</Text>
                 </View>
 
                 <View style={styles.viewEmail}>
@@ -29,12 +29,13 @@ export default class LoginPage extends Component {
                     </TouchableOpacity>
 
                 </View>
+                <Text style={styles.loginTitleCadastra} onPress={() => this.props.navigation.navigate('SignUp')}>Cadastrar</Text>
 
                 <TouchableHighlight style={styles.imgPositionLogin} onPress={() => this.props.navigation.navigate('SignUp')}>
                     <Image
                         style={styles.imgLogin}
 
-                        source={require('../assets/cancel.png')}
+                        source={require('../assets/icons/exit.png')}
                     />
                 </TouchableHighlight>
 

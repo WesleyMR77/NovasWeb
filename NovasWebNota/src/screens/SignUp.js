@@ -12,19 +12,24 @@ export default class SignUpPage extends Component {
                     <Text style={styles.signUpH1}>Crie a conta do usuário</Text>
                 </View>
 
-                <View style={styles.viewEmail}>
+                <View style={styles.signUpSpaceEmail}>
                     <Text >Email:</Text>
-                    <TextInput style={styles.inputLogin}></TextInput>
+                    <TextInput style={styles.signUpInput}></TextInput>
                 </View>
 
                 <View>
                     <Text >Nome:</Text>
-                    <TextInput secureTextEntry={true} style={styles.inputLogin}></TextInput>
+                    <TextInput secureTextEntry={true} style={styles.signUpInput}></TextInput>
                 </View>
 
                 <View>
                     <Text >Senha:</Text>
-                    <TextInput secureTextEntry={true} style={styles.inputLogin}></TextInput>
+                    <TextInput secureTextEntry={true} style={styles.signUpInput}></TextInput>
+                </View>
+
+                <View>
+                    <Text >Senha do Mestre:</Text>
+                    <TextInput secureTextEntry={true} style={styles.signUpInput}></TextInput>
                 </View>
 
                 <View style={styles.imgMesmaLinSingUp}>
@@ -33,15 +38,15 @@ export default class SignUpPage extends Component {
                         <Image
                             style={styles.imgLogin}
 
-                            source={require('../assets/cancel-fine.png')}
+                            source={require('../assets/icons/exit.png')}
                         />
                     </TouchableHighlight>
 
-                    <TouchableHighlight onPress={() => this.props.navigation.navigate('./')}>
+                    <TouchableHighlight onPress={() => this.props.navigation.navigate('List')}>
                         <Image
                             style={styles.imgLogin}
 
-                            source={require('../assets/right-arrow.png')}
+                            source={require('../assets/icons/rigth-arrow.png')}
                         />
                     </TouchableHighlight>
                 </View>

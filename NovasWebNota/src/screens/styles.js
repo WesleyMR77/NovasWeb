@@ -24,8 +24,8 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         borderWidth: 1,
         borderColor: '#d6d7da',
+        backgroundColor: 'white',
         fontSize: 18,
-
     },
 
     viewEmail: {
@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
     textButton: {
         color: 'white',
         fontSize: 20,
+        fontWeight: 'bold'
     },
 
     imgLogin: {
@@ -57,11 +58,14 @@ const styles = StyleSheet.create({
         marginTop: 55,
     },
 
+    loginTitleCadastra: {
+        marginTop: 20,
+    },
     // SignUp
 
     signUpCenter: {
         alignItems: 'center',
-        marginTop: 60,
+        marginTop: 40,
 
     },
 
@@ -77,13 +81,30 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
 
+    signUpSpaceEmail: {
+        marginTop: 37.5,
+    },
+
+    signUpInput: {
+        width: 260,
+        height: 40,
+        marginBottom: 25,
+        marginTop: 3,
+        borderRadius: 5,
+        borderWidth: 1,
+        borderColor: '#d6d7da',
+        backgroundColor: 'white',
+        fontSize: 18,
+    },
+
     imgSpaceSignUp: {
         marginRight: 80,
     },
 
     imgMesmaLinSingUp:{
         flexDirection: 'row',
-        marginTop: 25,
+        marginTop: 7.5,
+        justifyContent: 'center',
     },
 
     // List
@@ -93,7 +114,29 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         maxHeight: 290,
         borderColor: 'black',
-    }
+    },
+
+    listMenuContainer: {
+        flex: 1,
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        
+    },
+
+    listImg: {
+        width: 60,
+        height: 60,
+    },
+
+    listMenuBottom:{
+        flexDirection: 'row',
+        justifyContent: 'center',
+        backgroundColor: 'gray',
+    },
+
+    // menuList: {
+
+    // }
 });
 
 
