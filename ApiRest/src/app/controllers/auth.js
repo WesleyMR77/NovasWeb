@@ -2,9 +2,8 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 const User = require("../models/user");
+const userController = require("./user");
 const authConfig = require("../../config/auth.json");
-
-const character = require("./character");
 
 const generateToken = (params = {}) => {
     return jwt.sign(params, authConfig.secret, {});
@@ -17,35 +16,22 @@ const register = async (req, res) => {
         if (await User.findOne({ email })){
             return res.status(400).send({ error: "User already exists" });
         };
-        if (req.body.adminAccount != "" && req.body.adminAccount != "YconMaster"){
+
+        var authUser;
+        if(req.body.adminAccount == ""){
+            authUser = userController.create(false);
+        }else if (req.body.adminAccount == "YconMaster") {
+            authUser = userController.create(true);
+        }else{
             return res.send({ error: "Admin password incorrect"});
         }
-    
-    var authUser;
 
-    if(req.body.adminAccount == ""){
-        authUser = await User.create({
-            email: req.body.email,
-            name: req.body.name,
-            password: req.body.password,
-            adminAccount: false
+        authUser.password = undefined;
+
+        return res.send({
+            authUser,
+            token: generateToken({ id: authUser.id })
         });
-    }else{
-        authUser = await User.create({
-            email: req.body.email,
-            name: req.body.name,
-            password: req.body.password,
-            adminAccount: true
-        });
-        character.create(authUser.id);
-    }    
-
-    authUser.password = undefined;
-
-    return res.send({
-        authUser,
-        token: generateToken({ id: authUser.id })
-    });
     } catch (err) {
         return res.status(400).send({ error: "Registration failed" });
     }

@@ -8,7 +8,7 @@ module.exports = {
         return chars
     },
 
-    async store( user ){
+    async create( user ){
         Character.create({
             name: "Indefinido",
             age: 20,
