@@ -1,7 +1,7 @@
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-
-const User = require("../models/user");
+const mongoose = require('mongoose');
+const User = mongoose.model('User');
 const userController = require("./user");
 const authConfig = require("../../config/auth.json");
 
@@ -18,12 +18,13 @@ const register = async (req, res) => {
         };
 
         var authUser;
-        if(req.body.adminAccount == ""){
-            authUser = userController.create(false);
-        }else if (req.body.adminAccount == "YconMaster") {
-            authUser = userController.create(true);
+
+        if(req.body.masterPassword == ""){
+            authUser = userController.create(false, req.body);
+        }else if (req.body.masterPassword == "YconMaster") {
+            authUser = userController.create(true, req.body);
         }else{
-            return res.send({ error: "Admin password incorrect"});
+            return res.send({ error: "Master password incorrect"});
         }
 
         authUser.password = undefined;

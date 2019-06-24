@@ -10,4 +10,4 @@ router.get('/:id', controller.show);
 router.get('/edit/:id', middleware.verifyAdmin, controller.show);
 router.post('/edit/:id', middleware.verifyAdmin, controller.update);
 
-module.exports = routes;
+module.exports = router;

@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const mongoosePaginate = require('mongoose-paginate');
 
-const schema = new mongoose.Schema({
+const charSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true
@@ -55,7 +55,7 @@ const schema = new mongoose.Schema({
         required: true
     },
     user: {
-        type: Number,
+        type: String,
         required: true
     },
     createAt: {
@@ -64,6 +64,6 @@ const schema = new mongoose.Schema({
     }
 });
 
-schema.plugin(mongoosePaginate);
+charSchema.plugin(mongoosePaginate);
 
-mongoose.model('Character', schema);
+mongoose.model('Character', charSchema);

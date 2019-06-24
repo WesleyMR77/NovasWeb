@@ -1,9 +1,9 @@
 const jwt = require("jsonwebtoken");
-
-const User = require("../models/user");
+const mongoose = require('mongoose');
+const User = mongoose.model("User");
 const authConfig = require("../config/auth.json");
 
-const verifyToken = (req, res, next) => {
+const verifyToken = async (req, res, next) => {
     const authHeader = req.headers.authorization;
 
     if (!authHeader){
@@ -33,7 +33,7 @@ const verifyToken = (req, res, next) => {
   });
 };
 
-const verifyAdmin = (req, res, next) => {
+const verifyAdmin = async (req, res, next) => {
     const user = await User.findById(req.userId);
     
     if(user.adminAccount){

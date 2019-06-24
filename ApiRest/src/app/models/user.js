@@ -1,8 +1,8 @@
-const mongoose = require('../../database/index');
+const mongoose = require('mongoose');
 const mongoosePaginate = require('mongoose-paginate');
 const bcrypt = require("bcryptjs");
 
-const schema = new mongoose.Schema({
+const userSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true
@@ -25,13 +25,13 @@ const schema = new mongoose.Schema({
     }
 });
 
-schema.pre("save", async function(next) {
+userSchema.pre("save", async function(next) {
     const hash = await bcrypt.hash(this.password, 10);
     this.password = hash;
 
     next();
 });
 
-schema.plugin(mongoosePaginate);
+userSchema.plugin(mongoosePaginate);
 
-mongoose.model('User', schema);
+mongoose.model('User', userSchema);

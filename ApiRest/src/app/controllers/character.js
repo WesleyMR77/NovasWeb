@@ -1,34 +1,29 @@
-const mongoose = require('../../database/index');
+const mongoose = require('mongoose');
 const Character = mongoose.model('Character');
 
 module.exports = {    
-    async index(req, res){
-        const { page = 1 } = req.query;
-        const chars = await Character.paginate({}, { page, limit: 10});
-        return chars
-    },
 
     async create( user ){
-        Character.create({
+        await Character.create({
             name: "Indefinido",
             age: 20,
             gender: "Masculino",
             class: "Indefinido",
             clan: "Nenhum",
             maxHealth: 12000,
-            currentHealth: maxHealth,
+            currentHealth: 12000,
             maxMana: 1000,
-            currentMana: maxMana,
+            currentMana: 1000,
             maxHungry: 1000,
-            currentHungry: maxHungry,
+            currentHungry: 1000,
             maxThirst: 1000,
-            currentThirst: maxThirst,
+            currentThirst: 1000,
             user
         });
     },
 
     async show(req, res){
-        const char = await Character.findById(req.params.id);
+        const char = await Character.find({ user:req.params.id });
         return res.json(char);
     },
 

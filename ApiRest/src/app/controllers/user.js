@@ -1,4 +1,4 @@
-const mongoose = require('../../database/index');
+const mongoose = require('mongoose');
 const User = mongoose.model('User');
 const character = require('./character');
 
@@ -6,29 +6,30 @@ module.exports = {
     async index(req, res){
         const { page = 1 } = req.query;
         const users = await User.paginate({}, { page, limit: 10});
-        const chars = await character.index;
-        return res.json({ users, chars });
+        return res.json(users);
     },
 
-    async create( admin ){
+    async create( admin, info ){
         var user
         if(admin){
-            user = await User.create({
-                email: req.body.email,
-                name: req.body.name,
-                password: req.body.password,
-                adminAccount: false
-            });
-        }else{
-            user = await User.create({
-                email: req.body.email,
-                name: req.body.name,
-                password: req.body.password,
+            await User.create({
+                email: info.email,
+                name: info.name,
+                password: info.password,
                 adminAccount: true
             });
+        }else{
+            await User.create({
+                email: info.email,
+                name: info.name,
+                password: info.password,
+                adminAccount: false
+            });
+            user = await User.findOne({ name: info.name });
             character.create(user.id);
         };
-        return user;    
+        user = await User.findOne({ name: info.name });
+        return user;   
     },
 
     async show(req, res){
