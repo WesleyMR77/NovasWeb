@@ -85,6 +85,15 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         marginTop: 25,
     },
+
+    // List
+    listSizeScrollView: {
+        backgroundColor: '#D6E4E2',
+        width: 260,
+        borderRadius: 5,
+        maxHeight: 290,
+        borderColor: 'black',
+    }
 });
 
 

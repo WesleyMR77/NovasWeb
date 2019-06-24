@@ -6,6 +6,7 @@ import { createStackNavigator, createAppContainer, createBottomTabNavigator } fr
 
 import LoginPage from './src/screens/Login';
 import SignUpPage from './src/screens/SignUp';
+import ListPage from './src/screens/List';
 
 //rotas
 const AppNavigator = createStackNavigator(
@@ -15,20 +16,32 @@ const AppNavigator = createStackNavigator(
         },
         SignUp: {
             screen: SignUpPage
+        },
+        List: {
+            screen: ListPage
         }
     },
     {
-        initialRouteName: 'SignUp'
+        initialRouteName: 'List'
     }
 );
 
-// const TabNavigator =  createBottomTabNavigator({
-//     Login: LoginPage,
-//     SignUp: SignUpPage
-
-// })
+// const TabNavigator = createBottomTabNavigator({
+//     List: ListPage,
+// },
+//     {
+//         tabBarOptions: {
+//             activeTintColor: 'tomato',
+//             inactiveBackgroundColor: 'white',
+//             style: {
+//                 inactiveBackgroundColor: 'gray',
+//             },
+//         }
+//     }
+// );
 
 const AppContainer = createAppContainer(AppNavigator);
+// const TabNavigator = createAuthentication(TabNavigator);
 
 
 export default class App extends Component {
@@ -37,21 +50,4 @@ export default class App extends Component {
     }
 }
 
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//     backgroundColor: '#F5FCFF',
-//   },
-//   welcome: {
-//     fontSize: 20,
-//     textAlign: 'center',
-//     margin: 10,
-//   },
-//   instructions: {
-//     textAlign: 'center',
-//     color: '#333333',
-//     marginBottom: 5,
-//   },
-// });
+
