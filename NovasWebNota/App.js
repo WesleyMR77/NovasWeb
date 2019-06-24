@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react';
-import { createStackNavigator, createAppContainer } from 'react-navigation';
+import { createStackNavigator, createAppContainer, createBottomTabNavigator } from 'react-navigation';
+// import Ionicons from 'react-native-vector-icons/Ionicons';
 
 
 import LoginPage from './src/screens/Login';
@@ -20,6 +21,12 @@ const AppNavigator = createStackNavigator(
         initialRouteName: 'SignUp'
     }
 );
+
+// const TabNavigator =  createBottomTabNavigator({
+//     Login: LoginPage,
+//     SignUp: SignUpPage
+
+// })
 
 const AppContainer = createAppContainer(AppNavigator);
 
