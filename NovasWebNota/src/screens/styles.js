@@ -213,6 +213,40 @@ const styles = StyleSheet.create({
 
     //// Create Status
 
+    createStatusTextAvatar:{
+        marginLeft: 10,
+    },
+    createStatusAddImg:{
+        flexDirection: 'row',
+        marginTop: 30,
+        justifyContent: 'center',
+        alignItems: 'center',
+        maxHeight: 120,
+    },
+
+    createStatusImgProfileSize:{
+        maxWidth: 110,
+        maxHeight: 100,
+    },
+
+    createStatusBorderImg:{
+        borderWidth: 2,
+        maxHeight: 110,
+        backgroundColor: 'white',
+    },
+
+    createStatusImgCameraSize:{
+        maxWidth: 50,
+        maxHeight: 40,
+        marginLeft: 15,
+    },
+
+    createStatusImgGallerySize:{
+        maxWidth: 50,
+        maxHeight: 40,
+        marginLeft: 10,
+    },
+
     
 });
 

@@ -12,31 +12,32 @@ export default class SignUpPage extends Component {
                     <Text style={styles.signUpH1}>Crie um novo personagem</Text>
                 </View>
 
-                <View>
+                <View style={styles.createStatusAddImg}>
                     <View>
-                        <Text>Avatar</Text>
-                        <TouchableHighlight>
+                        <Text style={styles.createStatusTextAvatar}>Avatar</Text>
+                        <TouchableHighlight style={styles.createStatusBorderImg}>
                             <Image
-                                style={styles.imgLogin}
-                                source={require('../assets/icons/exit.png')}
+                                style={styles.createStatusImgProfileSize}
+                                source={require('../assets/icons/profile.png')}
                             />
                         </TouchableHighlight>
                     </View>
                     <TouchableHighlight>
-                            <Image
-                                style={styles.imgLogin}
-                                source={require('../assets/icons/exit.png')}
-                            />
-                        </TouchableHighlight>
-                        <TouchableHighlight>
-                            <Image
-                                style={styles.imgLogin}
-                                source={require('../assets/icons/exit.png')}
-                            />
-                        </TouchableHighlight>
-                    <View>
-                        
-                    </View>
+                        <Image
+                            style={styles.createStatusImgCameraSize}
+                            source={require('../assets/icons/camera.png')}
+                        />
+                    </TouchableHighlight>
+                    <TouchableHighlight>
+                        <Image
+                            style={styles.createStatusImgGallerySize}
+                            source={require('../assets/icons/gallery.png')}
+                        />
+                    </TouchableHighlight>
+                </View>
+
+                <View>
+
                 </View>
 
 
