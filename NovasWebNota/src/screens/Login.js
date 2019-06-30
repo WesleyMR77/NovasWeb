@@ -3,6 +3,10 @@ import { View, Text, Button, TextInput, TouchableOpacity, Image, TouchableHighli
 import styles from './styles';
 
 export default class LoginPage extends Component {
+static navigationOptions = {
+    title: "NovasCraft"
+}
+
     render() {
         return (
             <View style={styles.container}>
