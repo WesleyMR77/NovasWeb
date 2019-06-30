@@ -279,7 +279,39 @@ const styles = StyleSheet.create({
 
     createStatusSpaceView:{
         marginTop: 15,
-    }
+    },
+    createStatusMarginTopImg:{
+        marginTop: 15,
+    },
+
+    ///Profile
+
+    profileContainer:{
+        alignItems: 'center',
+        marginTop: height/17,
+        flex: 1,
+        justifyContent: 'space-between',
+    },
+
+    profileTextFontSize:{
+        fontSize: 25,
+        color: 'black',
+        fontWeight: 'bold',
+        marginBottom: 15,
+    },
+    profileTextPosition:{
+        marginLeft: (-width/10)
+    },
+    profileButtonAjusty:{
+        borderRadius: 10,
+        backgroundColor:'#1E6738', 
+        height: 40,
+        width: 120,
+        alignItems: 'center',
+        justifyContent: 'center',
+        color: 'white',
+        marginBottom: 20, 
+    },
 
     
 });

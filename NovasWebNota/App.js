@@ -10,6 +10,7 @@ import SignUpPage from './src/screens/SignUp';
 import ListPage from './src/screens/List';
 import CreateStatusPage from './src/screens/CreateStatus';
 import ProfileAdminPage from './src/screens/ProfileAdmin';
+import ProfilePage from './src/screens/Profile';
 
 
 
@@ -28,9 +29,15 @@ const AppNavigator = createStackNavigator(
         CreateStatus: {
             screen: CreateStatusPage
         },
+        ProfileAdmin: {
+            screen: ProfileAdminPage
+        },
+        Profile: {
+            screen: ProfilePage
+        },
     },
     {
-        initialRouteName: 'CreateStatus'
+        initialRouteName: 'Profile'
     }
 );
 

@@ -22,18 +22,18 @@ export default class SignUpPage extends Component {
                             />
                         </TouchableHighlight>
                     </View>
-                    <TouchableHighlight>
-                        <Image
-                            style={styles.createStatusImgCameraSize}
-                            source={require('../assets/icons/camera.png')}
-                        />
-                    </TouchableHighlight>
-                    <TouchableHighlight>
-                        <Image
-                            style={styles.createStatusImgGallerySize}
-                            source={require('../assets/icons/gallery.png')}
-                        />
-                    </TouchableHighlight>
+                        <TouchableHighlight style={styles.createStatusMarginTopImg}>
+                            <Image
+                                style={styles.createStatusImgCameraSize}
+                                source={require('../assets/icons/camera.png')}
+                            />
+                        </TouchableHighlight>
+                        <TouchableHighlight style={styles.createStatusMarginTopImg}>
+                            <Image
+                                style={styles.createStatusImgGallerySize}
+                                source={require('../assets/icons/gallery.png')}
+                            />
+                        </TouchableHighlight>
                 </View>
 
                 <View style={styles.createStatusSpaceView}>
