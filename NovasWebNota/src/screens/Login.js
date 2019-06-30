@@ -36,7 +36,6 @@ static navigationOptions = {
                 <Text style={styles.loginTitleCadastra} onPress={() => this.props.navigation.navigate('SignUp')}>Cadastrar</Text>
 
 
-
             </View>
         );
     }

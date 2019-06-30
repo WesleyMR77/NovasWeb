@@ -314,9 +314,23 @@ const styles = StyleSheet.create({
     },
     profileImgExit:{
         alignItems: 'center',
-    }
+    },
 
-    
+    ///EditeProfile
+
+    EditProfileContainer:{
+        flex: 1,
+        alignItems: 'center',
+        backgroundColor: '#F5FCFF', 
+    },
+    EditProfilePositionText:{
+        marginTop: height/10,
+        alignItems: 'center'
+    },
+    EditProfileTextSizeMin:{
+        fontWeight: 'bold',
+        color: 'black',
+    }
 });
 
 

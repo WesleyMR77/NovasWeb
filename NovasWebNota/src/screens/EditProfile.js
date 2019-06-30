@@ -5,9 +5,9 @@ import styles from './styles';
 export default class EditProfilePage extends Component {
     render() {
         return (
-            <View style={styles.container}>
-                <View style={styles.positionTextLogin} >
-                    <Text >NovasCraft</Text>
+            <View style={styles.EditProfileContainer}>
+                <View style={styles.EditProfilePositionText} >
+                    <Text style={styles.EditProfileTextSizeMin} >NovasCraft</Text>
                     <Text style={styles.textLogin}>Editar Perfil</Text>
                 </View>
 
@@ -23,7 +23,7 @@ export default class EditProfilePage extends Component {
 
                 <View style={styles.viewButtonLogin} >
                     <TouchableOpacity style={styles.buttonLogin}
-                        onPress={() => this.props.navigation.navigate('')}
+                        onPress={() => this.props.navigation.navigate('Profile')}
                         underlayColor='#fff'>
 
                         <Text style={styles.textButton}>Confirmar</Text>
