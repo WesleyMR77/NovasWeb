@@ -218,7 +218,7 @@ const styles = StyleSheet.create({
     },
     createStatusAddImg:{
         flexDirection: 'row',
-        marginTop: 30,
+        marginTop: 20,
         justifyContent: 'center',
         alignItems: 'center',
         maxHeight: 120,
@@ -226,12 +226,12 @@ const styles = StyleSheet.create({
 
     createStatusImgProfileSize:{
         maxWidth: 110,
-        maxHeight: 100,
+        maxHeight: 80,
     },
 
     createStatusBorderImg:{
         borderWidth: 2,
-        maxHeight: 110,
+        maxHeight: 100,
         backgroundColor: 'white',
     },
 
@@ -246,6 +246,40 @@ const styles = StyleSheet.create({
         maxHeight: 40,
         marginLeft: 10,
     },
+    createStatusInputLine:{
+        flexDirection: 'row'
+    },
+
+    createStatusInput:{
+        width: 260,
+        height: 32.5,
+        marginBottom: 12.5,
+        marginTop: 3,
+        borderRadius: 5,
+        borderWidth: 1,
+        borderColor: '#d6d7da',
+        backgroundColor: 'white',
+        fontSize: 10,
+    }, 
+
+    createStatusInputMiddle:{
+        width: 110,
+        height: 32.5,
+        marginBottom: 12.5,
+        marginTop: 3,
+        borderRadius: 5,
+        borderWidth: 1,
+        borderColor: '#d6d7da',
+        backgroundColor: 'white',
+        fontSize: 10,
+    },
+    createStatusInputMiddleSpace:{
+        marginLeft: 40,
+    },
+
+    createStatusSpaceView:{
+        marginTop: 15,
+    }
 
     
 });

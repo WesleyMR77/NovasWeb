@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, Button, TextInput, TouchableOpacity, TouchableHighlight, Image } from 'react-native';
+import { View, Text, Button, TextInput, TouchableOpacity, TouchableHighlight, Image, ScrollView } from 'react-native';
 
 import styles from './styles';
 
@@ -36,8 +36,50 @@ export default class SignUpPage extends Component {
                     </TouchableHighlight>
                 </View>
 
-                <View>
+                <View style={styles.createStatusSpaceView}>
+                    <View>
+                        <Text style={styles.createStatusTextAvatar} >Nome do Personagem:</Text>
+                        <TextInput style={styles.createStatusInput}></TextInput>
+                    </View>
 
+                    <View style={styles.createStatusInputLine}>
+                        <View >
+                            <Text style={styles.createStatusTextAvatar} >Idade:</Text>
+                            <TextInput style={styles.createStatusInputMiddle}></TextInput>
+                        </View>
+                        <View style={styles.createStatusInputMiddleSpace}>
+                            <Text style={styles.createStatusTextAvatar}>Sexo:</Text>
+                            <TextInput style={styles.createStatusInputMiddle}></TextInput>
+                        </View>
+                    </View>
+                    <View>
+                        <Text style={styles.createStatusTextAvatar} >Classe:</Text>
+                        <TextInput style={styles.createStatusInput}></TextInput>
+                    </View>
+                    <View>
+                        <Text style={styles.createStatusTextAvatar} >Grupo:</Text>
+                        <TextInput style={styles.createStatusInput}></TextInput>
+                    </View>
+
+                </View>
+
+                <View style={styles.imgMesmaLinSingUp}>
+
+                    <TouchableHighlight style={styles.imgSpaceSignUp} onPress={() => this.props.navigation.navigate('Login')}>
+                        <Image
+                            style={styles.imgLogin}
+
+                            source={require('../assets/icons/exit.png')}
+                        />
+                    </TouchableHighlight>
+
+                    <TouchableHighlight onPress={() => this.props.navigation.navigate('List')}>
+                        <Image
+                            style={styles.imgLogin}
+
+                            source={require('../assets/icons/rigth-arrow.png')}
+                        />
+                    </TouchableHighlight>
                 </View>
 
 
