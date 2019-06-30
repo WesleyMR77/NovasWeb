@@ -27,7 +27,7 @@ export default class ProfileAdminPage extends Component {
 
                 <View >
                     <TouchableOpacity style={styles.profileButtonAjusty}
-                        onPress={() => this.props.navigation.navigate('')}
+                        onPress={() => this.props.navigation.navigate('EditProfile')}
                         underlayColor='#fff'>
 
                         <Text style={styles.textButton}>Editar</Text>
@@ -46,7 +46,7 @@ export default class ProfileAdminPage extends Component {
 
                 <View style={styles.listMenuBottom}>
 
-                    <TouchableHighlight onPress={() => this.props.navigation.navigate('Login')}>
+                    <TouchableHighlight onPress={() => this.props.navigation.navigate('./')}>
                         <Image
                             style={styles.listImg}
 
@@ -54,7 +54,7 @@ export default class ProfileAdminPage extends Component {
                         />
                     </TouchableHighlight>
 
-                    <TouchableHighlight onPress={() => this.props.navigation.navigate('./')}>
+                    <TouchableHighlight onPress={() => this.props.navigation.navigate('List')}>
                         <Image
                             style={styles.listImg}
 
@@ -62,13 +62,6 @@ export default class ProfileAdminPage extends Component {
                         />
                     </TouchableHighlight>
 
-                    <TouchableHighlight onPress={() => this.props.navigation.navigate('./')}>
-                        <Image
-                            style={styles.listImg}
-
-                            source={require('../assets/icons/status.png')}
-                        />
-                    </TouchableHighlight>
                 </View>
 
 

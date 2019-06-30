@@ -14,7 +14,7 @@ export default class ListPage extends React.Component {
                     <ScrollView style={styles.listSizeScrollView}>
                         <View style={styles.listNameUser}>
                             <Text style={styles.listTextNameUser} >Nome do Usuário</Text>
-                            <TouchableHighlight style={styles.listImgPositonStatus} onPress={() => this.props.navigation.navigate('./')}>
+                            <TouchableHighlight style={styles.listImgPositonStatus} onPress={() => this.props.navigation.navigate('EditStatus')}>
                                 <Image
                                     style={styles.listImgOptionUser}
 

@@ -11,6 +11,8 @@ import ListPage from './src/screens/List';
 import CreateStatusPage from './src/screens/CreateStatus';
 import ProfileAdminPage from './src/screens/ProfileAdmin';
 import ProfilePage from './src/screens/Profile';
+import EditStatusPage from './src/screens/EditStatus';
+import EditProfilePage from './src/screens/EditProfile';
 
 
 
@@ -34,6 +36,12 @@ const AppNavigator = createStackNavigator(
         },
         Profile: {
             screen: ProfilePage
+        },
+        EditStatus:{
+            screen: EditStatusPage
+        },
+        EditProfile:{
+            screen: EditProfilePage
         },
     },
     {
