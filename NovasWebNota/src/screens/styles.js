@@ -304,14 +304,17 @@ const styles = StyleSheet.create({
     },
     profileButtonAjusty:{
         borderRadius: 10,
-        backgroundColor:'#1E6738', 
+        backgroundColor:'#188c3b', 
         height: 40,
         width: 120,
         alignItems: 'center',
         justifyContent: 'center',
         color: 'white',
-        marginBottom: 20, 
+        marginBottom: 15, 
     },
+    profileImgExit:{
+        alignItems: 'center'
+    }
 
     
 });

@@ -33,9 +33,6 @@ export default class ProfilePage extends Component {
                         <Text style={styles.textButton}>Editar</Text>
                     </TouchableOpacity>
 
-               
-
-                
                     <TouchableOpacity style={styles.profileButtonAjusty}
                         onPress={() => this.props.navigation.navigate('')}
                         underlayColor='#fff'>
@@ -43,7 +40,16 @@ export default class ProfilePage extends Component {
                         <Text style={styles.textButton}>Sair</Text>
                     </TouchableOpacity>
 
+                    <TouchableHighlight style={styles.profileImgExit} onPress={() => this.props.navigation.navigate('Login')}>
+                        <Image
+                            style={styles.imgLogin}
+
+                            source={require('../assets/icons/exit.png')}
+                        />
+                    </TouchableHighlight>
+
                 </View>
+
 
                 <View style={styles.listMenuBottom}>
 
