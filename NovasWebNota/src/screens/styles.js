@@ -313,7 +313,7 @@ const styles = StyleSheet.create({
         marginBottom: 15, 
     },
     profileImgExit:{
-        alignItems: 'center'
+        alignItems: 'center',
     }
 
     

@@ -61,7 +61,7 @@ export default class ProfilePage extends Component {
                         />
                     </TouchableHighlight>
 
-                    <TouchableHighlight onPress={() => this.props.navigation.navigate('./')}>
+                    <TouchableHighlight onPress={() => this.props.navigation.navigate('List')}>
                         <Image
                             style={styles.listImg}
 
@@ -69,13 +69,6 @@ export default class ProfilePage extends Component {
                         />
                     </TouchableHighlight>
 
-                    <TouchableHighlight onPress={() => this.props.navigation.navigate('./')}>
-                        <Image
-                            style={styles.listImg}
-
-                            source={require('../assets/icons/status.png')}
-                        />
-                    </TouchableHighlight>
                 </View>
 
 

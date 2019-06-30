@@ -31,13 +31,7 @@ export default class LoginPage extends Component {
                 </View>
                 <Text style={styles.loginTitleCadastra} onPress={() => this.props.navigation.navigate('SignUp')}>Cadastrar</Text>
 
-                <TouchableHighlight style={styles.imgPositionLogin} onPress={() => this.props.navigation.navigate('SignUp')}>
-                    <Image
-                        style={styles.imgLogin}
 
-                        source={require('../assets/icons/exit.png')}
-                    />
-                </TouchableHighlight>
 
             </View>
         );

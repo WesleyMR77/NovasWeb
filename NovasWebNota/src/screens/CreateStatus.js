@@ -65,7 +65,7 @@ export default class SignUpPage extends Component {
 
                 <View style={styles.imgMesmaLinSingUp}>
 
-                    <TouchableHighlight style={styles.imgSpaceSignUp} onPress={() => this.props.navigation.navigate('Login')}>
+                    <TouchableHighlight style={styles.imgSpaceSignUp} onPress={() => this.props.navigation.navigate('List')}>
                         <Image
                             style={styles.imgLogin}
 
@@ -73,13 +73,7 @@ export default class SignUpPage extends Component {
                         />
                     </TouchableHighlight>
 
-                    <TouchableHighlight onPress={() => this.props.navigation.navigate('List')}>
-                        <Image
-                            style={styles.imgLogin}
-
-                            source={require('../assets/icons/rigth-arrow.png')}
-                        />
-                    </TouchableHighlight>
+      
                 </View>
 
 
