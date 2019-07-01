@@ -36,7 +36,7 @@ export default class ProfilePage extends Component {
 
                 <View >
                     <TouchableOpacity style={styles.profileButtonAjusty}
-                        onPress={() => this.props.navigation.navigate('')}
+                        onPress={() => this.props.navigation.navigate('EditProfile')}
                         underlayColor='#fff'>
 
                         <Text style={styles.textButton}>Editar</Text>

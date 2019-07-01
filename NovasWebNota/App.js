@@ -49,7 +49,7 @@ const AppNavigator = createStackNavigator(
         },
     },
     {
-        initialRouteName: 'Status'
+        initialRouteName: 'Login'
     }
 );
 

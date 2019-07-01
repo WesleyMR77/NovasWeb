@@ -75,9 +75,6 @@ export default class StatusPage extends Component {
                     </View>
                 </View>
 
-
-
-
                 <View style={styles.listMenuBottom}>
 
                     <TouchableHighlight onPress={() => this.props.navigation.navigate('Profile')}>
