@@ -4,12 +4,19 @@ import { View, Text, Button, TextInput, TouchableOpacity, TouchableHighlight, Im
 import styles from './styles';
 
 export default class SignUpPage extends Component {
+    static navigationOptions = {
+        title: "Criar Personagem",
+        headerStyle: {
+            backgroundColor:"#008641"
+        },
+        headerTintColor: "#fff"
+        
+    }
     render() {
         return (
             <View style={styles.container}>
                 <View style={styles.signUpCenter}>
                     <Text style={styles.signUpTitle}>Novas Craft</Text>
-                    <Text style={styles.signUpH1}>Crie um novo personagem</Text>
                 </View>
 
                 <View style={styles.createStatusAddImg}>

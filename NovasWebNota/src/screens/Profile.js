@@ -3,6 +3,15 @@ import { View, Text, Button, TextInput, TouchableOpacity, Image, TouchableHighli
 import styles from './styles';
 
 export default class ProfilePage extends Component {
+    static navigationOptions = {
+        title: "NovasCraft",
+        headerStyle: {
+            backgroundColor:"#008641"
+        },
+        headerTintColor: "#fff"
+        
+    }
+    
     render() {
         return (
             <View style={styles.profileContainer}>

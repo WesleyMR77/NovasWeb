@@ -3,15 +3,20 @@ import { View, Text, Button, TextInput, TouchableOpacity, Image, TouchableHighli
 import styles from './styles';
 
 export default class LoginPage extends Component {
-static navigationOptions = {
-    title: "NovasCraft"
-}
+    static navigationOptions = {
+        title: "NovasCraft",
+        headerStyle: {
+            backgroundColor:"#008641"
+        },
+        headerTintColor: "#fff"
+        
+    }
 
     render() {
         return (
             <View style={styles.container}>
                 <View style={styles.positionTextLogin} >
-                    <Text style={styles.textLogin}>NovasCraft</Text>
+
                 </View>
 
                 <View style={styles.viewEmail}>
