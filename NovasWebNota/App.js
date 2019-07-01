@@ -8,7 +8,12 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import LoginPage from './src/screens/Login';
 import SignUpPage from './src/screens/SignUp';
 import ListPage from './src/screens/List';
+import CreateStatusPage from './src/screens/CreateStatus';
 import ProfileAdminPage from './src/screens/ProfileAdmin';
+import ProfilePage from './src/screens/Profile';
+import EditStatusPage from './src/screens/EditStatus';
+import EditProfilePage from './src/screens/EditProfile';
+import StatusPage from './src/screens/Status';
 
 
 
@@ -23,10 +28,28 @@ const AppNavigator = createStackNavigator(
         },
         List: {
             screen: ListPage
-        }
+        },
+        CreateStatus: {
+            screen: CreateStatusPage
+        },
+        ProfileAdmin: {
+            screen: ProfileAdminPage
+        },
+        Profile: {
+            screen: ProfilePage
+        },
+        EditStatus:{
+            screen: EditStatusPage
+        },
+        EditProfile:{
+            screen: EditProfilePage
+        },
+        Status:{
+            screen: StatusPage
+        },
     },
     {
-        initialRouteName: 'List'
+        initialRouteName: 'Login'
     }
 );
 

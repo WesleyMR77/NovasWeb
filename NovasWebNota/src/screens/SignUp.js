@@ -4,6 +4,14 @@ import { View, Text, Button, TextInput, TouchableOpacity, TouchableHighlight, Im
 import styles from './styles';
 
 export default class SignUpPage extends Component {
+    static navigationOptions = {
+        title: "NovasCraft",
+        headerStyle: {
+            backgroundColor:"#008641"
+        },
+        headerTintColor: "#fff"
+        
+    }
     render() {
         return (
             <View style={styles.container}>
@@ -34,15 +42,8 @@ export default class SignUpPage extends Component {
 
                 <View style={styles.imgMesmaLinSingUp}>
 
-                    <TouchableHighlight style={styles.imgSpaceSignUp} onPress={() => this.props.navigation.navigate('Login')}>
-                        <Image
-                            style={styles.imgLogin}
 
-                            source={require('../assets/icons/exit.png')}
-                        />
-                    </TouchableHighlight>
-
-                    <TouchableHighlight onPress={() => this.props.navigation.navigate('List')}>
+                    <TouchableHighlight onPress={() => this.props.navigation.navigate('CreateStatus')}>
                         <Image
                             style={styles.imgLogin}
 

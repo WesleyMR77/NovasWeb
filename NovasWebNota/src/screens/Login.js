@@ -13,6 +13,7 @@ import styles from './styles';
 import api from '../services/api';
 
 export default class LoginPage extends Component {
+
     state = {
         email: "",
         emailValid: true,
@@ -44,11 +45,21 @@ export default class LoginPage extends Component {
             });
     };
 
+    static navigationOptions = {
+        title: "NovasCraft",
+        headerStyle: {
+            backgroundColor:"#008641"
+            
+        },
+        headerTintColor: "#fff"
+        
+    }
+
     render() {
         return (
             <View style={styles.container}>
                 <View style={styles.positionTextLogin} >
-                    <Text style={styles.textLogin}>NovasCraft</Text>
+
                 </View>
 
                 <View style={styles.viewEmail}>
@@ -86,13 +97,6 @@ export default class LoginPage extends Component {
                     onPress={() => this.props.navigation.navigate('SignUp')}>
                 Cadastrar
                 </Text>
-
-                <TouchableHighlight style={styles.imgPositionLogin} onPress={BackAndroid.exitApp()}>
-                    <Image
-                        style={styles.imgLogin}
-                        source={require('../assets/icons/exit.png')}
-                    />
-                </TouchableHighlight>
 
             </View>
         );

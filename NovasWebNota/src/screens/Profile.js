@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, Button, TextInput, TouchableOpacity, Image, TouchableHighlight } from 'react-native';
 import styles from './styles';
 
-export default class ProfileAdminPage extends Component {
+export default class ProfilePage extends Component {
     static navigationOptions = {
         title: "NovasCraft",
         headerStyle: {
@@ -11,6 +11,7 @@ export default class ProfileAdminPage extends Component {
         headerTintColor: "#fff"
         
     }
+    
     render() {
         return (
             <View style={styles.profileContainer}>
@@ -48,6 +49,13 @@ export default class ProfileAdminPage extends Component {
                         <Text style={styles.textButton}>Sair</Text>
                     </TouchableOpacity>
 
+                    <TouchableHighlight style={styles.profileImgExit} onPress={() => this.props.navigation.navigate('Login')}>
+                        <Image
+                            style={styles.imgLogin}
+
+                            source={require('../assets/icons/exit.png')}
+                        />
+                    </TouchableHighlight>
 
                 </View>
 
@@ -62,11 +70,11 @@ export default class ProfileAdminPage extends Component {
                         />
                     </TouchableHighlight>
 
-                    <TouchableHighlight onPress={() => this.props.navigation.navigate('List')}>
+                    <TouchableHighlight onPress={() => this.props.navigation.navigate('Status')}>
                         <Image
                             style={styles.listImg}
 
-                            source={require('../assets/icons/list.png')}
+                            source={require('../assets/icons/status.png')}
                         />
                     </TouchableHighlight>
 
