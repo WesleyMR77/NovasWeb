@@ -13,6 +13,7 @@ import ProfileAdminPage from './src/screens/ProfileAdmin';
 import ProfilePage from './src/screens/Profile';
 import EditStatusPage from './src/screens/EditStatus';
 import EditProfilePage from './src/screens/EditProfile';
+import StatusPage from './src/screens/Status';
 
 
 
@@ -43,9 +44,12 @@ const AppNavigator = createStackNavigator(
         EditProfile:{
             screen: EditProfilePage
         },
+        Status:{
+            screen: StatusPage
+        },
     },
     {
-        initialRouteName: 'Login'
+        initialRouteName: 'Status'
     }
 );
 

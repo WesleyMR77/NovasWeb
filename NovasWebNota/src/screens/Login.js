@@ -7,6 +7,7 @@ export default class LoginPage extends Component {
         title: "NovasCraft",
         headerStyle: {
             backgroundColor:"#008641"
+            
         },
         headerTintColor: "#fff"
         

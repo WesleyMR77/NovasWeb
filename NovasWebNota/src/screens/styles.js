@@ -330,7 +330,93 @@ const styles = StyleSheet.create({
     EditProfileTextSizeMin:{
         fontWeight: 'bold',
         color: 'black',
+    },
+
+    /// Status
+    statusInfoPersonLine:{
+        flexDirection: 'row',
+    },
+    statusSpaceImg:{
+        marginLeft: 20,
+    },
+    statusTextColor:{
+        color: 'black',
+        marginBottom: 2.5,
+    },
+    statusPositionAttribute:{
+        alignItems: 'flex-start',
+        marginRight: width/4,
+    },
+    statusTextAttribute1:{
+        flex: 1,
+        backgroundColor: 'red',
+        alignItems: 'center',
+        justifyContent: 'center',
+        maxHeight: 25,
+        width: 180,
+        borderWidth: 2,
+        borderColor: 'black',
+        marginBottom: 12.5,
+    },
+
+    statusTextAttribute2:{
+        flex: 1,
+        backgroundColor: '#8E04E6',
+        alignItems: 'center',
+        justifyContent: 'center',
+        maxHeight: 25,
+        width: 180,
+        borderWidth: 2,
+        borderColor: 'black',
+        marginBottom: 12.5,
+    },
+
+    statusTextAttribute3:{
+        flex: 1,
+        backgroundColor: '#B7B900',
+        alignItems: 'center',
+        justifyContent: 'center',
+        maxHeight: 25,
+        width: 180,
+        borderWidth: 2,
+        borderColor: 'black',
+        marginBottom: 12.5,
+    },
+
+    statusTextAttribute4:{
+        flex: 1,
+        backgroundColor: '#00FFFF',
+        alignItems: 'center',
+        justifyContent: 'center',
+        maxHeight: 25,
+        width: 180,
+        borderWidth: 2,
+        borderColor: 'black',
+        marginBottom: 12.5,
+    },
+
+    statusTextAttribute5:{
+        flex: 1,
+        backgroundColor: '#00FF00',
+        alignItems: 'center',
+        justifyContent: 'center',
+        maxHeight: 25,
+        width: 180,
+        borderWidth: 2,
+        borderColor: 'black',
+        marginBottom: 12.5,
+    },
+
+    statusTextBold:{
+        fontWeight: 'bold',
+    },
+    statusTextColor:{
+        color: 'black',
+    },
+    statusSpaceLife:{
+        marginTop: 5,
     }
+
 });
 
 

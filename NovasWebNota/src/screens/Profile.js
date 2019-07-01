@@ -43,7 +43,7 @@ export default class ProfilePage extends Component {
                     </TouchableOpacity>
 
                     <TouchableOpacity style={styles.profileButtonAjusty}
-                        onPress={() => this.props.navigation.navigate('')}
+                        onPress={() => this.props.navigation.navigate('Login')}
                         underlayColor='#fff'>
 
                         <Text style={styles.textButton}>Sair</Text>
@@ -62,7 +62,7 @@ export default class ProfilePage extends Component {
 
                 <View style={styles.listMenuBottom}>
 
-                    <TouchableHighlight onPress={() => this.props.navigation.navigate('Login')}>
+                    <TouchableHighlight onPress={() => this.props.navigation.navigate('./')}>
                         <Image
                             style={styles.listImg}
 
@@ -70,11 +70,11 @@ export default class ProfilePage extends Component {
                         />
                     </TouchableHighlight>
 
-                    <TouchableHighlight onPress={() => this.props.navigation.navigate('List')}>
+                    <TouchableHighlight onPress={() => this.props.navigation.navigate('Status')}>
                         <Image
                             style={styles.listImg}
 
-                            source={require('../assets/icons/list.png')}
+                            source={require('../assets/icons/status.png')}
                         />
                     </TouchableHighlight>
 
