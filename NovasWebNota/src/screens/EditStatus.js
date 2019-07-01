@@ -104,14 +104,15 @@ export default class EditStatusPage extends Component {
                     </View>
 
                 </View>
-                
-                <TouchableHighlight style={styles.imgSpaceSignUp} onPress={() => this.props.navigation.navigate('List')}>
-                        <Image
-                            style={styles.imgLogin}
+                <View style={styles.editStatusCenter}>
+                <TouchableOpacity style={styles.profileButtonAjusty}
+                        onPress={() => this.props.navigation.navigate('Login')}
+                        underlayColor='#fff'>
 
-                            source={require('../assets/icons/exit.png')}
-                        />
-                    </TouchableHighlight>
+                        <Text style={styles.textButton}>Confirmar</Text>
+                    </TouchableOpacity>
+                    </View>
+                
 
                 </ScrollView>
 

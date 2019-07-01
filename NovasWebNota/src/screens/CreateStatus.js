@@ -72,13 +72,12 @@ export default class SignUpPage extends Component {
 
                 <View style={styles.imgMesmaLinSingUp}>
 
-                    <TouchableHighlight style={styles.imgSpaceSignUp} onPress={() => this.props.navigation.navigate('List')}>
-                        <Image
-                            style={styles.imgLogin}
+                <TouchableOpacity style={styles.profileButtonAjusty}
+                        onPress={() => this.props.navigation.navigate('List')}
+                        underlayColor='#fff'>
 
-                            source={require('../assets/icons/exit.png')}
-                        />
-                    </TouchableHighlight>
+                        <Text style={styles.textButton}>Confirmar</Text>
+                    </TouchableOpacity>
 
       
                 </View>

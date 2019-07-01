@@ -34,7 +34,7 @@ export default class ListPage extends React.Component {
                                 <Image
                                     style={styles.listImgOptionUser}
 
-                                    source={require('../assets/icons/exit.png')}
+                                    source={require('../assets/icons/trash-bin.png')}
                                 />
                             </TouchableHighlight>
                         </View>

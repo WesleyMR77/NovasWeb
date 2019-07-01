@@ -12,6 +12,14 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#F5FCFF',
     },
+
+    imgLoginLogo: {
+        maxWidth:120,
+        maxHeight: 120,
+        marginTop: 40, 
+    
+    },
+
     positionTextLogin: {
         marginTop: 50,
     },
@@ -34,9 +42,7 @@ const styles = StyleSheet.create({
         fontSize: 18,
     },
 
-    viewEmail: {
-        marginTop: 50,
-    },
+
     viewButtonLogin: {
         marginTop: 30,
     },
@@ -415,6 +421,13 @@ const styles = StyleSheet.create({
     },
     statusSpaceLife:{
         marginTop: 5,
+    },
+
+    ///EditStatus
+    editStatusCenter:{
+        alignItems: 'center',
+        marginTop: 25,
+        marginBottom: 30,
     }
 
 });
@@ -422,6 +435,6 @@ const styles = StyleSheet.create({
 
 
 
+
+
 export default styles;
-
-
