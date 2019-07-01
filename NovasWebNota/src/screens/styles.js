@@ -15,6 +15,12 @@ const styles = StyleSheet.create({
     positionTextLogin: {
         marginTop: 50,
     },
+    imgLoginLogo: {
+        maxWidth:150,
+        maxHeight: 150,
+        marginTop:1,
+    
+    },
 
     textLogin: {
         fontSize: 30,

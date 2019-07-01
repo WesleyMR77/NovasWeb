@@ -16,8 +16,13 @@ export default class LoginPage extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <View style={styles.positionTextLogin} >
 
+                <View style={styles.positionTextLogin} >
+                <View>
+                <Image
+                style={styles.imgLoginLogo}
+                source={require('../assets/icons/LogoNovas.png')}/>
+                </View>
                 </View>
 
                 <View style={styles.viewEmail}>
