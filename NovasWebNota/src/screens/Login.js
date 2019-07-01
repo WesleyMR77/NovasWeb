@@ -58,7 +58,8 @@ export default class LoginPage extends Component {
         headerTintColor: "#fff"
         
     }
-
+ 
+    
     render() {
         return (
             <View style={styles.container}>
