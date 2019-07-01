@@ -6,6 +6,7 @@ import styles from './styles';
 export default class SignUpPage extends Component {
     static navigationOptions = {
         title: "NovasCraft",
+
         headerStyle: {
             backgroundColor:"#008641"
         },

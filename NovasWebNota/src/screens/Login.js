@@ -58,15 +58,18 @@ export default class LoginPage extends Component {
         headerTintColor: "#fff"
 
     }
-
+ 
+    
     render() {
         return (
-
             <View style={styles.container}>
+
+                <View style={styles.positionTextLogin} >
                 <View>
-                    <Image
-                        style={styles.imgLoginLogo}
-                        source={require('../assets/icons/LogoNovas.png')} />
+                <Image
+                style={styles.imgLoginLogo}
+                source={require('../assets/icons/LogoNovas.png')}/>
+                </View>
                 </View>
 
                 <View style={styles.viewEmail}>

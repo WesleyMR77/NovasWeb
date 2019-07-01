@@ -5,10 +5,7 @@ import styles from './styles';
 export default class StatusPage extends Component {
     static navigationOptions = {
         title: "NovasCraft",
-        headerTitleStyle: { 
-            textAlign:"center", 
-            flex:1 
-        },
+
         headerStyle: {
             backgroundColor: "#008641"
         },
