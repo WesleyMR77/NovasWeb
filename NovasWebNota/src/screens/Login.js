@@ -14,7 +14,7 @@ import api from '../services/api';
 
 export default class LoginPage extends Component {
 
-  /*  state = {
+    state = {
         email: "",
         emailValid: true,
         password: ""
@@ -43,7 +43,7 @@ export default class LoginPage extends Component {
                     this.setState({ emailValid: false });
                 console.warn(err.response); // mostrar qual campo está errado
             });
-    };*/
+    };
 
     static navigationOptions = {
         title: "NovasCraft",
