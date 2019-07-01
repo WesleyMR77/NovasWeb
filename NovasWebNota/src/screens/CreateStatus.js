@@ -6,6 +6,10 @@ import styles from './styles';
 export default class SignUpPage extends Component {
     static navigationOptions = {
         title: "Criar Personagem",
+        headerTitleStyle: { 
+            textAlign:"center", 
+            flex:1 
+        },
         headerStyle: {
             backgroundColor:"#008641"
         },

@@ -16,9 +16,8 @@ const styles = StyleSheet.create({
         marginTop: 50,
     },
     imgLoginLogo: {
-        maxWidth:150,
-        maxHeight: 150,
-        marginTop:1,
+        maxWidth:130,
+        maxHeight: 130,
     
     },
 
@@ -32,7 +31,7 @@ const styles = StyleSheet.create({
         width: 260,
         height: 45,
         marginBottom: 25,
-        marginTop: 3,
+        marginTop: 1,
         borderRadius: 5,
         borderWidth: 1,
         borderColor: '#d6d7da',
@@ -41,7 +40,7 @@ const styles = StyleSheet.create({
     },
 
     viewEmail: {
-        marginTop: 50,
+        marginTop: 5,
     },
     viewButtonLogin: {
         marginTop: 30,

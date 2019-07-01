@@ -6,6 +6,10 @@ import styles from './styles';
 export default class ListPage extends React.Component {
     static navigationOptions = {
         title: "NovasCraft",
+        headerTitleStyle: { 
+            textAlign:"center", 
+            flex:1 
+        },
         headerStyle: {
             backgroundColor:"#008641"
         },
